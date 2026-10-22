@@ -1,0 +1,10 @@
+@echo off
+echo Tamper-Evident Audit Logging - setup and run
+py -m pip install -r requirements.txt
+if errorlevel 1 (
+  echo Dependency installation failed. Check Python and internet connection.
+  pause
+  exit /b 1
+)
+py -m streamlit run app.py
+pause
