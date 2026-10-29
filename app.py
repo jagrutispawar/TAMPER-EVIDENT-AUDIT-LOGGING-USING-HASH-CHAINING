@@ -101,9 +101,10 @@ def verify_logs(logs):
 
 
 st.title("🔐 Tamper-Evident Audit Logging Using Hash Chaining")
-st.write("Cryptography & Information Security (CIS) • Educational project demonstration")
-st.info("This is a local educational prototype. It detects changes to the stored chain; it is not a production immutable logging service.")
-
+st.write("Secure Audit Trail • SHA-256 Hash Chaining • Integrity Verification")
+st.info(
+    "SHA-256 Hash Chaining | Audit Log Integrity Verification"
+)
 logs = load_logs()
 is_valid, bad_index, verify_message = verify_logs(logs)
 
